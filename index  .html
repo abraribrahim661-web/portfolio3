@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الروايات</title>
+  <link rel="stylesheet" href="css/media.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+<body>
+
+<header class="grid" >
+  <h1>احدث الرويات</h1>
+  <nav>
+    <ul>
+      <li><a  href="الصفحة1.html">الرئيسية</a></li>
+      <li><a  href="الصفحة2.html">الروايات</a></li>
+      <li><a  href="الصفحة3.html">عن الموقع</a></li>
+      <li><a  href="الصفحة4.html">تواصل معنا</a></li>
+      <li><a  href="الصفحة5.html">تسجيل الدخول</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="container " >
+ <div class="card">
+   <a href="www.wattpad.com"><img src="image/ارض زيكولا.jpg"  alt="رواية 1"></a>
+   <h4 class="card-title">الأرض زيكولا</h4>
+   <p class="card-text">المؤلف:  عمرو عبدالحميد</p>
+     <button onclick="showbooktoast('ارض زيكولا')">التفاصيل</button>
+ </div>
+    
+ 
+ <div class="card ">
+   <a href="www.noor-book.com"><img src="image/الطريق الى القمر.jpg"  alt="رواية 2"></a>
+   <h4>الطريق الى القمر</h4>
+   <p class="card-text">المؤلف:أيمن ابراهيم</p>
+     <button onclick="showbooktoast('الطريق الى القمر')">التفاصيل</button>  
+ </div>
+
+  
+  <div class="card ">
+    <a href="ketabpedia.com"><img src="image/شمس منتصف الليل.jpg"  alt="رواية 3"></a>   
+    <h4 class="card-title">شمس منتصف الليل</h4>
+    <p class="card-text">المؤلف: محمد طارق الدوسري </p>
+    <button onclick="showbooktoast('شمس منتصف الليل')">التفاصيل</button>
+  </div>
+    
+</section>
+<div>
+  
+<hr></hr>
+<!-- Modals -->
+
+<div id="modal">
+    <div id="modal-content">
+        <h3 class="modal-title">الأرض زيكولا</h3>
+        <p>وصف مختصر للرواية</p>
+        <button type="button" data-="modal">إغلاق</button>
+    </div>
+
+    <div id="modal-content">
+        <h3 class="modal-title">الطريق الى القمر</h3>
+        <p>وصف مختصر للرواية</p>
+        <button  type="button" data-="modal" >إغلاق</button>
+    </div>
+
+    <div id="modal-content">
+        <h3 class="modal-title">شمس منتصف الليل</h3>
+        <p>وصف مختصر للرواية</p>
+        <button type="button" data-="modal">إغلاق</button>
+    </div>
+</div>
+<footer>
+   <div >
+    <h3><img src="image/phone-solid-full.svg" >تواصل عبر وسائل التواصل:</h3>
+    <a href="www.facebook.com" ><img src="image/facebook-brands-solid-full.svg"></a>
+    <a href="www.telegram .org" ><img src="image/telegram-brands-solid-full.svg"> </a>
+    <a href="instagram.com"><img src="image/instagram-brands-solid-full.svg"></a>
+   </div>
+  <p>جميع الحقوق محفوظة &copy; 2025</p>
+</footer>
+ <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+</body>
+</html>

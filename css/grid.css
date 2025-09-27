@@ -1,0 +1,156 @@
+/* ===== إعدادات أساسية ===== */
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+grid-template-rows: auto 1fr auto ;
+grid-template-areas: "head head head head"
+"img img img img"
+"cont cont cont side"
+"foot foot foot foot"
+;
+   gap: 10px;
+
+   background-image: url("../image/الطريق\ الى\ القمر.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+    direction: rtl;
+ 
+}
+
+/* ===== Header ===== */
+
+
+header {
+   grid-area: head;
+    background: linear-gradient(to top right , #f1b4ec, #b1e4eb);
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgb(82, 71, 71);
+    margin-bottom:10px ;
+    display:inline-block;
+
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    text-align: center;
+    color: #ffffff;
+    text-align: center; 
+    text-shadow: 0 4px 6px rgb(82, 71, 71);
+}
+
+header nav ul {
+    list-style: none;
+    padding: 5px;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+    text-align: center;
+     
+}
+
+header nav ul li a {
+    color: rgb(255, 249, 249);
+    text-decoration: none;
+     text-shadow: 0 3px 4px rgb(82, 71, 71);
+   text-align: center;
+}
+
+header nav ul li a:hover {
+    color: #000000;
+   
+}
+
+
+       
+/*===== الصفحة الثانية=====*/
+.abc{
+grid-area: cont;
+    padding:10px ;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+   margin-bottom: 20px;
+    background: linear-gradient(to bottom , #cbebf5, #ffffff);
+}
+.abc p{
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.abc ul li{
+ font-family:Georgia, 'Times New Roman', Times, serif;
+
+}
+
+
+/* ===== Aside (المؤلفون) ===== */
+.mov {
+  
+ grid-area: side;
+    background: linear-gradient(to bottom, #cdf3ff, #f8f9fa);
+    padding: 5px;
+  display: inline-flex;
+    border-radius: 15px;
+      text-shadow: 0 4px 6px rgb(82, 71, 71);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  
+   
+}
+
+.mov h3 {
+ 
+    text-align: center;
+    color: #000000;
+ 
+}
+
+.mov ul {
+ list-style-type:  none;;
+    padding: 0;
+    text-decoration: none;
+ color: #212529;
+}
+
+.mov ul li {
+    padding: 10px;
+    border-bottom: 1px solid #fefefe;
+    
+}
+.mov ul li a {
+    padding: 10px;
+    border-bottom: 1px solid #fefefe;
+    color: #050505;
+    text-decoration: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.mov ul li:hover {
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+
+}
+
+/* ===== Footer ===== */
+footer {
+    grid-area: foot;
+      background: linear-gradient(to bottom right, #f1b4ec, #b1e4eb);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 -4px 6px rgba(0,0,0,0.3);
+      text-shadow: 0 4px 6px rgb(82, 71, 71);
+}
+footer div h3{
+    color: #212529;
+}
+footer a{
+    margin: 10px;
+    color: #000000;
+     text-decoration: none;
+     
+
+}
+
