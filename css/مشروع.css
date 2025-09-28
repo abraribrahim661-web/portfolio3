@@ -5,36 +5,29 @@
 /* ===== إعدادات أساسية ===== */
 
 body {
-    display: grid;
-    grid-template-columns: 1fr;
-grid-template-rows: auto 1fr auto ;
-grid-template-areas: "head head head head"
-"from from from from"
-"cont cont cont side"
-"foot foot foot foot"
-;
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: auto 1fr auto ;
+   grid-template-areas: "head head head head"
+   "from from from from"
+   "cont cont cont side"
+   "foot foot foot foot";
    gap: 10px;
    background: linear-gradient(to top right , #ffa1f7, #b1e4eb);
-
-    direction: rtl;
+   direction: rtl;
  
 }
 
 /* ===== Header ===== */
-
-
 header {
    grid-area: head;
     background: linear-gradient(to top right , #f1b4ec, #b1e4eb);
     padding: 20px 0;
     box-shadow: 0 4px 6px rgb(82, 71, 71);
     margin-bottom:10px ;
-    display:inline-block;
-
 }
 
 header h1 {
-    margin: 0;
     font-size: 2rem;
     text-align: center;
     color: #ffffff;
@@ -48,17 +41,10 @@ header nav ul {
     display: flex;
 }
 
-header nav ul li {
-    margin: 0 15px;
-    text-align: center;
-     
-}
-
 header nav ul li a {
-    color: rgb(255, 249, 249);
-    text-decoration: none;
+     color: rgb(255, 249, 249);
      text-shadow: 0 3px 4px rgb(82, 71, 71);
-   text-align: center;
+     
 }
 
 header nav ul li a:hover {
@@ -70,49 +56,41 @@ header nav ul li a:hover {
        
 /*===== الصفحة الثانية=====*/
 .abc{
-grid-area: cont;
+    grid-area: cont;
     padding:10px ;
     border-radius: 15px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-   margin-bottom: 20px;
-  background: linear-gradient(to top right , #ffa1f7, #b1e4eb);
+    margin-bottom: 20px;
+    background: linear-gradient(to top right , #ffa1f7, #b1e4eb);
 }
 .abc p{
     font-family: 'Times New Roman', Times, serif;
-
 }
 .abc ul li{
  font-family:Georgia, 'Times New Roman', Times, serif;
-
 }
 
 
 /* ===== Aside (المؤلفون) ===== */
-.mov {
-  
- grid-area: side;
-  background: linear-gradient(to top right , #ffa1f7, #b1e4eb);
+.mov { 
+    grid-area: side;
+    background: linear-gradient(to top right , #ffa1f7, #b1e4eb);
     padding: 5px;
-  display: inline-flex;
+    display: inline-flex;
     border-radius: 15px;
-      text-shadow: 0 4px 6px rgb(82, 71, 71);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  
-   
+    text-shadow: 0 4px 6px rgb(82, 71, 71);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); 
 }
 
 .mov h3 {
- 
-    text-align: center;
     color: #000000;
- 
 }
 
 .mov ul {
- list-style-type:  none;;
+   list-style-type:  none;;
     padding: 0;
     text-decoration: none;
- color: #212529;
+    color: #212529;
 }
 
 .mov ul li {
@@ -132,41 +110,32 @@ grid-area: cont;
     background-color: #ffffff;
     color: #000000;
     cursor: pointer;
-
 }
 
 /* ===== Footer ===== */
 footer {
     grid-area: foot;
-      background: linear-gradient(to bottom right, #f1b4ec, #b1e4eb);
+    background: linear-gradient(to bottom right, #f1b4ec, #b1e4eb);
     color: rgb(0, 0, 0);
     text-align: center;
     padding: 20px 0;
     box-shadow: 0 -4px 6px rgba(0,0,0,0.3);
-      text-shadow: 0 4px 6px rgb(82, 71, 71);
+    text-shadow: 0 4px 6px rgb(82, 71, 71);
 }
 footer div h3{
     color: #212529;
 }
 footer a{
     margin: 10px;
-    color: #000000;
-     text-decoration: none;
-     
-
+    text-decoration: none;
 }
 
 
 /* ===== Forms ===== */
 form {
     grid-area: from;
-
- 
- 
     padding: 25px;
-    
     border-radius: 15px;
- 
     display:  inline-flex;
     flex-direction: column;
     box-shadow: 0 8px 20px rgba(246, 246, 246, 0.15);

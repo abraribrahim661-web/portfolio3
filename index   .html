@@ -5,48 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>تواصل معنا</title>
   <link rel="stylesheet" href="css/مشروع.css">
-
+<link rel="stylesheet" type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js">
+<link rel="stylesheet" src="https://code.jquery.com/jquery-3.6.0.min.js">
+<link rel="stylesheet" src="js/main.js">
 </head>
 <body>
 
-<header class="bg-dark text-white p-3">
-
-    
-    <h1>تواصل معنا</h1>
+<header >
+ <h1>تواصل معنا</h1>
     <nav>
-      <ul class="nav">
-        <li class="nav-item"><a class="nav-link text-white" href="الصفحة1.html">الرئيسية</a></li>
-        <li class="nav-item"><a class="nav-link text-white" href="الصفحة2.html">الروايات</a></li>
-        <li class="nav-item"><a class="nav-link text-white" href="الصفحة3.html">عن الموقع</a></li>
-        <li class="nav-item"><a class="nav-link text-white" href="الصفحة4.html">تواصل معنا</a></li>
-        <li class="nav-item"><a class="nav-link text-white" href="الصفحة5.html">تسجيل الدخول</a></li>
+      <ul>
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="index .html">الروايات</a></li>
+        <li><a href="index  .html">عن الموقع</a></li>
+        <li><a href="index   .html">تواصل معنا</a></li>
+        <li><a href="index    .html">تسجيل الدخول</a></li>
       </ul>
     </nav>
- 
 </header>
 
-<section class="mb">
+<section>
   <form>
-    <div class="mb-3">
-     
-      <input type="text"  id="name" placeholder="الاسم" required>
+    <div>
+      <input type="text"   placeholder="الاسم" required minlength="15">
     </div>
-    <div class="mb-3">
-     
-      <input type="email"  id="email" placeholder="البريد الاكتروني" required>
+    <div>
+      <input type="email"  placeholder="البريد الاكتروني" required>
     </div>
-    <div class="mb-3">
-     
-      <textarea  id="message" rows="4" placeholder="الرسالة" required></textarea>
+    <div>
+    <textarea  id="message" rows="4" placeholder="الرسالة" required></textarea>
     </div>
     <button type="submit" >إرسال</button>
   </form>
-
 </section>
 
-<footer class="bg-dark text-white text-center p-3">
+<footer>
   
-   <div >
+  <div>
     <h3><img src="image/phone-solid-full.svg" >تواصل عبر وسائل التواصل:</h3>
     <a href="www.facebook.com" ><img src="image/facebook-brands-solid-full.svg"></a>
     <a href="www.telegram .org" ><img src="image/telegram-brands-solid-full.svg"> </a>
@@ -54,8 +49,25 @@
   </div>
   <p>جميع الحقوق محفوظة &copy; 2025</p>
 </footer>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/main.js"></script>
 
-
+<script>
+     
+    const contactForm = document.querySelector('form');
+    if (contactForm && contactForm.action === '') { 
+        contactForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+            Toastify({
+                text: "تم إرسال رسالتك بنجاح! شكراً لتواصلك.",
+                duration: 4000,
+                backgroundColor: "linear-gradient(to right, #007bff, #00bfff)",
+            }).showToast();
+            contactForm.reset();
+        });
+    }
+</script>
 
 </body>
 </html>

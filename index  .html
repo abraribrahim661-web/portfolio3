@@ -9,17 +9,18 @@
 </head>
 <body>
 
-<header class="grid" >
-  <h1>احدث الرويات</h1>
-  <nav>
-    <ul>
-      <li><a  href="الصفحة1.html">الرئيسية</a></li>
-      <li><a  href="الصفحة2.html">الروايات</a></li>
-      <li><a  href="الصفحة3.html">عن الموقع</a></li>
-      <li><a  href="الصفحة4.html">تواصل معنا</a></li>
-      <li><a  href="الصفحة5.html">تسجيل الدخول</a></li>
-    </ul>
-  </nav>
+
+<header>
+ <h1>احدث الرويات</h1>
+    <nav>
+      <ul>
+        <li><a  href="index.html">الرئيسية</a></li>
+        <li><a  href="index .html">الروايات</a></li>
+        <li><a   href="index  .html">عن الموقع</a></li>
+        <li><a   href="index   .html">تواصل معنا</a></li>
+        <li><a   href="index    .html">تسجيل الدخول</a></li>
+      </ul>
+    </nav>
 </header>
 
 <section class="container " >
@@ -27,7 +28,6 @@
    <a href="www.wattpad.com"><img src="image/ارض زيكولا.jpg"  alt="رواية 1"></a>
    <h4 class="card-title">الأرض زيكولا</h4>
    <p class="card-text">المؤلف:  عمرو عبدالحميد</p>
-     <button onclick="showbooktoast('ارض زيكولا')">التفاصيل</button>
  </div>
     
  
@@ -35,7 +35,6 @@
    <a href="www.noor-book.com"><img src="image/الطريق الى القمر.jpg"  alt="رواية 2"></a>
    <h4>الطريق الى القمر</h4>
    <p class="card-text">المؤلف:أيمن ابراهيم</p>
-     <button onclick="showbooktoast('الطريق الى القمر')">التفاصيل</button>  
  </div>
 
   
@@ -43,7 +42,6 @@
     <a href="ketabpedia.com"><img src="image/شمس منتصف الليل.jpg"  alt="رواية 3"></a>   
     <h4 class="card-title">شمس منتصف الليل</h4>
     <p class="card-text">المؤلف: محمد طارق الدوسري </p>
-    <button onclick="showbooktoast('شمس منتصف الليل')">التفاصيل</button>
   </div>
     
 </section>
@@ -55,20 +53,20 @@
 <div id="modal">
     <div id="modal-content">
         <h3 class="modal-title">الأرض زيكولا</h3>
-        <p>وصف مختصر للرواية</p>
-        <button type="button" data-="modal">إغلاق</button>
+        <p> رواية فانتازية عربية شهيرة، تدور أحداثها في عالم غريب لا يُباع فيه ولا يُشترى بالمال، بل بالذكاء. يواجه البطل تحديات كبيرة في هذا المجتمع الغريب، حيث يصبح العقل هو العملة الوحيدة، لتظهر معانٍ عن قيمة الفكر والعدل والاختيارات. </p>
+        <button type="button" data-="modal"  onclick="showbooktoast('ارض زيكولا')">إغلاق</button>
     </div>
 
     <div id="modal-content">
         <h3 class="modal-title">الطريق الى القمر</h3>
-        <p>وصف مختصر للرواية</p>
-        <button  type="button" data-="modal" >إغلاق</button>
+        <p> رواية خيالية علمية من روائع الأدب الكلاسيكي، تسرد محاولة مجموعة من العلماء والمغامرين السفر إلى القمر باستخدام مدفع عملاق يُطلق كبسولة فضائية. الرواية تعكس شغف الإنسان بالاكتشاف، وتُعتبر من أوائل الأعمال التي مهدت لفكرة غزو الفضاء.</p>
+        <button  type="button" data-="modal" onclick="showbooktoast('الطريق الى القمر')">إغلاق</button>
     </div>
 
     <div id="modal-content">
         <h3 class="modal-title">شمس منتصف الليل</h3>
-        <p>وصف مختصر للرواية</p>
-        <button type="button" data-="modal">إغلاق</button>
+        <p> جزء مكمل لسلسلة Twilight، لكنه يُروى من منظور مصاص الدماء إدوارد كولين بدلًا من بيللا. يكشف الكتاب عن صراعات إدوارد الداخلية بين حبه لبيللا ورغبته في حمايتها من نفسه ومن عالمه الخطير. الرواية تسلط الضوء على المشاعر العميقة والتضحيات داخل قصة حب خارجة عن المألوف. </p>
+        <button type="button" data-="modal"  onclick="showbooktoast('شمس منتصف الليل')">إغلاق</button>
     </div>
 </div>
 <footer>
